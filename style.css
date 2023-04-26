@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background : #55423d;
+    --headline : #fffffe;
+    --paragraph : #fff3ec;
+    --button : #ffc0ad ;
+    --btn-txt : #271c19;
+    
+    --stroke : #140d0b;
+    --main : #fff3ec; 
+    --highligh : #e78fb3;
+    --secondary : #ffc0ad;
+    --tertiary : #9656a1;
+
+    /* DARKMODE CSS */
+
+    --background-dm :#16161a;
+    --headline-dm :#fffffe; 
+    --paragraph-dm :#94a1b2; 
+    --button-dm :#7f5af0;
+    --btn-txt-dm :#fffffe; 
+}
+
+body {
+    background-image: linear-gradient(#241e1c, #16161a);
+    height: 200vh;
+    /* position: relative; */
+}
+
+nav {
+    width: 100%;
+    background-color: #ddd;
+    height: 45px;
+    position: fixed;
+    /* position: -webkit-sticky; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+nav .logo {
+    width: 30px;
+    height: 30px;
+    background-image: url(image/TKJ\ 2.jpg);
+    background-size: cover;
+    /* margin-left: 10px; */
+    /* margin-right: 20px; */
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+nav .brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin: 0 0px; */
+    /* padding-right: 50px; */
+    letter-spacing: 2px;
+}
+
+nav .darkMode i {
+    font-size: 25px;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#55423d, #140d0b);
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(237, 237, 237);
+}
+
+main p {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+main .form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.form #search {
+    padding: 5px 7px;
+    width: 500px;
+    border: 2px solid var(--stroke);
+    border-radius: 10px;
+    background-color: var(--main);
+    /* margin-left: 30px; */
+}
+
+.form button {
+    padding: 7px 7px;
+    border-radius: 50%;
+    background-color: var(--main);
+    margin-right: 7px;
+}
+
+.welcome {
+    width: 98%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(221, 221, 221, 0.271);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.welcome .desk {
+    padding: 5px;
+}
+
+.welcome h4 {
+    font-size: 13px;
+}
+
+.welcome iframe {
+    width: 90px;
+    height: 90px;
+    border: none;
+}
+
+.container {
+    width: 100%;
+    height: 157vh;
+    background-color: var(--background);
+    position: absolute;
+    top: 290px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container span {
+    width: 100px;
+    height: 10px;
+    background-color: grey;
+    position: absolute;
+    /* margin: auto; */
+    left: 45%;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.container h4 {
+    text-align: center;
+    color: var(--btn-txt);
+    background-color: var(--secondary);
+    display: block;
+    width: 200px;
+    margin :auto;
+    margin-top: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin-bottom: 40px;
+    border: 2px solid var(--stroke);
+}
+
+.container .jadwal {
+    width: 87%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.463);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container .jadwal .hari {
+    width: 80px;
+    text-align: center;
+    background-color: var(--highligh);
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.container .jadwal p {
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.story {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.story .card {
+    width: 143px;
+    height: 100px;
+    background-color: #ffc0ad;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card i {
+    margin-bottom: 20px;
+}
+
+.card a {
+    display: block;
+    /* margin-top: 25px; */
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--background);
+    box-sizing: border-box;
+    width: 50px;
+    color: white;
+    font-size: 13px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.story .card h5 {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* BREKPOINT RESPONSIVE */
+/* LEBAR DESKTOP */
+@media screen and (min-height : 1000px) {
+
+    main {
+        width: 900px;
+        margin: auto;
+    }
+
+    .container {
+        width: 900px;
+        left: 500px;
+        height: 100vh;
+    }
+    
+}
+
+
